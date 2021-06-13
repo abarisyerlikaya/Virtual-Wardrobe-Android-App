@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="tr.edu.yildiz.sanaldolabim_18011063">
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.SanalDolabım">
+        <activity android:name=".activities.EditEventActivity"></activity>
+        <activity android:name=".activities.EventsActivity" />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyCuaCyNuFnlYVqA1KuVNWgVMPHGxdcBHXk" />
+
+        <activity android:name=".activities.EditOutfitActivity" />
+        <activity android:name=".activities.EditWearActivity" />
+        <activity android:name=".activities.CreateOutfitActivity" />
+        <activity android:name=".activities.CreateWearActivity" />
+        <activity android:name=".activities.SingleDrawerActivity" />
+        <activity android:name=".activities.CabinetRoomActivity" />
+        <activity android:name=".activities.CreateEventActivity" />
+        <activity android:name=".activities.MapActivity" />
+        <activity android:name=".activities.DrawersActivity" />
+        <activity android:name=".activities.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

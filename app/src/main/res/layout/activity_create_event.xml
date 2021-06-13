@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.CreateEventActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/eventNameEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Etkinlik Adı"
+                android:inputType="textPersonName" />
+
+            <EditText
+                android:id="@+id/eventTypeEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Etkinlik Türü"
+                android:inputType="textPersonName" />
+
+            <EditText
+                android:id="@+id/eventDateEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Etkinlik Tarihi"
+                android:inputType="textPersonName" />
+
+            <Button
+                android:id="@+id/pickLocationButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@android:color/transparent"
+                android:text="Lokasyon Seç"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/eventOutfitLabelTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Giyilen Kombin" />
+
+            <Spinner
+                android:id="@+id/eventOutfitSpinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <Button
+                android:id="@+id/saveEventButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Etkinliği Kaydet" />
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

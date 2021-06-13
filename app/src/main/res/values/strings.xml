@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Sanal Dolabım</string>
+    <string name="title_activity_maps">Harita</string>
+    <string name="google_maps_key">AIzaSyCuaCyNuFnlYVqA1KuVNWgVMPHGxdcBHXk</string>
+</resources>
